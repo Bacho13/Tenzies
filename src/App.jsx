@@ -50,8 +50,12 @@ function App() {
   if (tenzies) {
     let previousBest = localStorage.getItem("bestTime");
 
-    if (previousBest > count) {
+    if (!previousBest) {
       localStorage.setItem("bestTime", count);
+    }else{
+      if(previousBest > count){
+        localStorage.setItem("bestTime", count);
+      }
     }
   }
 
