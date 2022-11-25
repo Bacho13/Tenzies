@@ -92,7 +92,7 @@ function App() {
 
     if (allHeld && allValueSame) {
       setTenzies(true);
-      console.log("woon");
+      
     }
   }, [dice]);
 
@@ -104,7 +104,7 @@ function App() {
     );
   }
 
-  console.log(allNewDice());
+  
 
   const diceElements = dice.map((item) => (
     <Dice
